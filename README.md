@@ -8,7 +8,7 @@ Site hospedado: https://apenasumsonhador.github.io/dataVis2025/
 
 - Conjunto de páginas e/ou visualizações estáticas para demonstrar técnicas de data visualization.
 - Possíveis diretórios típicos (dependendo da sua versão do repositório):
-  - `index.html` — entrada principal (se for site estático)
+  - `index.html` — entrada principal
   - `src/` — código-fonte (JS, componentes)
   - `img/` — imagens
   - `LICENSE` — arquivo de licença
