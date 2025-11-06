@@ -1,16 +1,26 @@
 :root {
   --max-width: 1200px;
   --gap: 16px;
-  --card-bg: #ffffff;
-  --card-radius: 10px;
-  --card-shadow: 0 8px 24px rgba(12, 18, 32, 0.06);
-  --cor-texto: #f6f6f6;
-  --cor-texto-card: #475569;
-  --cor-primaria: #ffd700;
-  --cor-fundo: #000000;
+
+  /* superfícies */
+  --card-bg: #fafbfd; /* cartão levemente frio e suave */
+  --card-radius: 12px;
+  --card-shadow: 0 10px 30px rgba(2, 6, 23, 0.06);
+
+  /* tipografia */
+  --cor-texto: #e6eef8; /* texto principal claro sobre fundo escuro */
+  --cor-texto-card: #0f1724; /* texto escuro para cards claros */
+
+  /* cores principais e de fundo */
+  --cor-primaria: #ffd166; /* tom quente e sofisticado para navbar/footer */
+  --cor-fundo: #071029; /* fundo muito escuro com subtom azulado */
+
+  /* navbar */
   --navbar-height: 64px;
-  --navbar-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
-  --accent: #0b5fff;
+  --navbar-shadow: 0 6px 24px rdgba(2, 6, 23, 0.36);
+
+  /* accent */
+  --accent: #6c63ff; /* acento violeta para highlights e controles */
 }
 
 /* Reset & base */
