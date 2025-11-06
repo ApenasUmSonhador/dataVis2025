@@ -20,7 +20,7 @@
 }
 .hero .subtitle {
   margin: 4px 0 0 0;
-  color: #475569;
+  color: #aeb1b5;
   font-size: 0.95rem;
 }
 
@@ -39,8 +39,8 @@
   font-size: 0.95rem;
 }
 .search .btn {
-  background: var(--accent);
-  color: #fff;
+  background: var(--cor-primaria);
+  color: var(--cor-fundo);
   border: none;
   padding: 10px 14px;
   border-radius: 10px;
@@ -74,6 +74,7 @@
 .card h3 {
   margin: 0;
   font-size: 1rem;
+  color: #12151a;
 }
 .card p {
   margin: 0;
@@ -90,24 +91,27 @@
   margin-left: auto;
   text-decoration: none;
   background: transparent;
-  border: 1px solid var(--accent);
-  color: var(--accent);
+  border: 1px solid var(--cor-primaria);
   padding: 8px 10px;
   border-radius: 8px;
   font-weight: 600;
 }
 .card a.primary {
-  background: var(--accent);
-  color: #fff;
+  background: var(--cor-primaria);
+  color: var(--cor-fundo);
   border-color: transparent;
+}
+
+.card small {
+  color: #6a717a;
 }
 
 /* Footer pequeno */
 .hint {
   max-width: var(--max-width);
+  color: #475569;
   margin: 18px auto;
   padding: 10px 16px;
-  color: #6b7280;
   font-size: 0.9rem;
 }
 

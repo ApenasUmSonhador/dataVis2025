@@ -1,7 +1,6 @@
 /* Layout principal */
 body {
   padding-top: var(--navbar-height);
-  background: #f3f4f6;
   margin: 0;
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
     Arial;
@@ -26,6 +25,7 @@ body {
 
 /* Cartões de gráfico */
 .chart-card {
+  color: var(--cor-texto-card);
   background: var(--card-bg);
   border-radius: var(--card-radius);
   box-shadow: var(--card-shadow);
