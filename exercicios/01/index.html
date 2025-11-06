@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Exercício 1 — Vega-Lite API</title>
+    <meta name="description" content="Página com visualizações de dados empilhadas e navbar fixa." />
+    <link rel="stylesheet" href="../../general-style.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Inicio Navbar -->
+     <header class="navbar" role="banner">
+        <div class="brand" aria-hidden="false">
+            <div class="logo" aria-hidden="true"></div>
+            <div>
+                <strong>Arthur Vinicius Carneiro Nunes</strong>
+                <small class="matricula">Matrícula: 552341</small>
+            </div>
+        </div>
+
+        <nav class="nav-center" aria-label="Navegação principal">
+            <a href="../../index.html" class="nav-link">Home</a>
+            <a href="https://docs.google.com/document/d/1iFbsFdSpxb3GoZ2gmL0Iv14Z0dz_1vMezDsFj870i80/edit?usp=sharing" target="_blank" class="nav-link">Currículo</a>
+            <a href="https://github.com/ApenasUmSonhador/dataVis2025" target="_blank" class="nav-link">Repositório</a>
+            <a href="mailto:arthurvininunes@gmail.com" class="nav-link">Contato</a>
+        </nav>
+
+        <div class="nav-right">
+            <span class="professor">Professora: Dra. Emanuele Marques dos Santos</span>
+        </div>
+    </header>
+    <!-- Fim navbar -->
+
+    <!-- Conteúdo: gráficos empilhados -->
+    <div class="charts-grid">
+        <div class="chart-card">
+            <h3 class="chart-title">Comparativo de Médias de BPM por Tipo de Treino</h3>
+            <p>Médias de batimentos cardíacos em repouso, durante e no pico de esforço para cada categoria de treino.</p>
+            <div class="chart-wrapper">
+                <iframe
+                    src="https://observablehq.com/embed/b201f0acba489d4d@206?cells=bar_chart"
+                    loading="lazy"
+                    referrerpolicy="no-referrer"
+                    title="Bar chart"
+                ></iframe>
+            </div>
+        </div>
+
+        <div class="col-right">
+            <div class="chart-card">
+                <h3 class="chart-title">Relação entre BPM em Repouso e BPM Máximo por Gênero</h3>
+                <p>Distribuição dos valores de batimentos cardíacos em repouso e no pico de esforço, separados por gênero.</p>
+                <div class="chart-wrapper">
+                    <iframe
+                        src="https://observablehq.com/embed/b201f0acba489d4d@210?cells=Scatterplot_chart"
+                        loading="lazy"
+                        referrerpolicy="no-referrer"
+                        title="Scatterplot"
+                    ></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

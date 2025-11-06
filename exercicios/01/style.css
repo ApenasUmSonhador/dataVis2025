@@ -1,0 +1,90 @@
+/* Layout principal */
+body {
+  padding-top: var(--navbar-height);
+  background: #f3f4f6;
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial;
+}
+
+/* Grid empilhado */
+.charts-grid {
+  max-width: var(--max-width);
+  margin: 24px auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--gap);
+  padding: 0 16px;
+  align-items: start;
+  box-sizing: border-box;
+}
+
+.col-right {
+  display: block;
+  gap: var(--gap);
+}
+
+/* Cartões de gráfico */
+.chart-card {
+  background: var(--card-bg);
+  border-radius: var(--card-radius);
+  box-shadow: var(--card-shadow);
+  padding: 12px;
+  box-sizing: border-box;
+  overflow: hidden;
+  min-height: 420px;
+}
+
+.chart-title {
+  margin: 0 0 8px 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial;
+  font-size: 1rem;
+  color: #111;
+}
+
+/* Wrapper de gráficos responsivos */
+.chart-wrapper {
+  width: 100%;
+  position: relative;
+  background: transparent;
+  height: 800px;
+  padding-bottom: 56.25%; /* fallback 16:9 */
+}
+
+@supports (aspect-ratio: 16/9) {
+  .chart-wrapper {
+    padding-bottom: 0;
+    height: auto;
+    aspect-ratio: 16 / 9;
+  }
+  .chart-wrapper.aspect-tall {
+    aspect-ratio: 4 / 3;
+  }
+}
+
+.chart-wrapper iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 740px;
+  border: 0;
+  display: block;
+  background: transparent;
+}
+
+/* Responsividade */
+@media (max-width: 900px) {
+  .charts-grid {
+    grid-template-columns: 1fr;
+  }
+  :root {
+    --navbar-height: 56px;
+  }
+  .brand strong {
+    font-size: 0.95rem;
+  }
+  .nav-center {
+    display: none;
+  }
+}

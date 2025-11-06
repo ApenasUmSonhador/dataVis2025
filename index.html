@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Home — Visualização de Dados</title>
+    <meta name="description" content="Página de seleção das soluções de exercícios da disciplina Visualização de Dados" />
+    <link rel="stylesheet" href="general-style.css" />
+    <link rel="stylesheet" href="style.css" />
+
+</head>
+<body>
+    <header class="navbar" role="banner">
+        <div class="brand" aria-hidden="false">
+            <div class="logo" aria-hidden="true"></div>
+            <div>
+                <strong>Arthur Vinicius Carneiro Nunes</strong>
+                <small class="matricula">Matrícula: 552341</small>
+            </div>
+        </div>
+
+        <nav class="nav-center" aria-label="Navegação principal">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="https://docs.google.com/document/d/1iFbsFdSpxb3GoZ2gmL0Iv14Z0dz_1vMezDsFj870i80/edit?usp=sharing" target="_blank" class="nav-link">Currículo</a>
+            <a href="https://github.com/ApenasUmSonhador/dataVis2025" target="_blank" class="nav-link">Repositório</a>
+            <a href="mailto:arthurvininunes@gmail.com" class="nav-link">Contato</a>
+        </nav>
+
+        <div class="nav-right">
+            <span class="professor">Professora: Dra. Emanuele Marques dos Santos</span>
+        </div>
+    </header>
+
+    <main class="container" role="main">
+        <div class="hero" aria-hidden="false">
+            <div>
+                <h1 class="title">Soluções dos Exercícios — Visualização de Dados</h1>
+                <div class="subtitle">Selecione um exercício para visualizar a solução. Os links podem apontar para páginas locais, notebooks ou dashboards embutidos.</div>
+            </div>
+
+            <div class="search" role="search" aria-label="Pesquisar exercícios">
+                <input id="filter" type="search" placeholder="Pesquisar número ou título" />
+                <button id="clear" class="btn" type="button">Limpar</button>
+            </div>
+        </div>
+
+        <section class="menu-grid" id="menu" aria-label="Menu de soluções">
+            <article class="card" data-keywords="1 bpm medias treino barra">
+                <h3>Exercício 1 — Vega-Lite API</h3>
+                <p>Visualizações interativas desenvolvidas com Vega-Lite, explorando padrões de batimentos cardíacos por tipo de treino e gênero.</p>
+                <div class="meta">
+                    <small>Tipo: ObservableHQ, Bar chart, Scatterplot, Vega-Lite</small>
+                    <a href="exercicios/01/index.html" class="primary" aria-label="Abrir solução do exercício 1">Abrir</a>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <div class="hint">
+        Dica: use a busca para filtrar por número, título ou palavras-chave (ex: "BPM", "scatter", "agrupar").
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

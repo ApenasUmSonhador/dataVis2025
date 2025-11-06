@@ -1,0 +1,91 @@
+:root {
+  --max-width: 1200px;
+  --gap: 16px;
+  --card-bg: #fff;
+  --card-radius: 10px;
+  --card-shadow: 0 8px 24px rgba(12, 18, 32, 0.06);
+
+  --navbar-height: 64px;
+  --navbar-bg: #ffffff;
+  --navbar-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  --accent: #0b5fff;
+}
+
+/* Reset & base */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  padding-top: var(--navbar-height);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial;
+  background: #f3f4f6;
+  color: #0f1724;
+}
+
+/* Navbar fixa no topo */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: var(--navbar-height);
+  background: var(--navbar-bg);
+  box-shadow: var(--navbar-shadow);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 0 20px;
+  z-index: 999;
+}
+.brand {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+.brand .logo {
+  width: 44px;
+  height: 44px;
+  border-radius: 8px;
+  background-image: url("img/avatar.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 0 4px 12px rgba(11, 95, 255, 0.12);
+}
+
+.brand strong {
+  display: block;
+  font-size: 1rem;
+}
+.brand .matricula {
+  font-size: 0.75rem;
+  color: #556;
+}
+
+.nav-center {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+.nav-link {
+  color: var(--accent);
+  text-decoration: none;
+  font-size: 0.95rem;
+  padding: 6px 8px;
+  border-radius: 8px;
+}
+.nav-link:hover {
+  background: rgba(11, 95, 255, 0.06);
+}
+
+.nav-right {
+  font-size: 0.95rem;
+  color: #111;
+}
