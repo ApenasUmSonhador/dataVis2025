@@ -25,5 +25,5 @@ Site hospedado: https://apenasumsonhador.github.io/dataVis2025/
 
 ## Contato
 
-- Owner / Maintainer: [arthurvininunes@gmail.com](mailto:arthurvininunes@gmail.com)
+- Owner / Maintainer: [Arthur Vinicius Carneiro Nunes](https://github.com/ApenasUmSonhador/)
 - Para questões rápidas, abra uma issue ou um PR com a sugestão.
