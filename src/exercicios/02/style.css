@@ -1,0 +1,18 @@
+.modified-chart-wrapper {
+  width: 100%;
+  position: relative;
+  background: var(--card-bg);
+  height: 940px;
+  padding-bottom: 56.25%; /* fallback 16:9 */
+}
+
+.modified-chart-card {
+  color: var(--cor-texto-card);
+  background: var(--card-bg);
+  border-radius: var(--card-radius);
+  box-shadow: var(--card-shadow);
+  padding: 12px;
+  box-sizing: border-box;
+  overflow: hidden;
+  min-height: 420px;
+}
